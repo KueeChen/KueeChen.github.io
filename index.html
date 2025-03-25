@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        #container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        
+        #layout-menu {
+            width: 20%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 15px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        #layout-content {
+            width: 80%;
+            padding: 30px 40px;
+        }
+        
+        .menu-category {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            color: #ecf0f1;
+            border-bottom: 1px solid #34495e;
+            padding-bottom: 5px;
+        }
+        
+        .menu-item a {
+            display: block;
+            color: #bdc3c7;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item a:hover, .menu-item a.current {
+            background-color: #34495e;
+            color: white;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 32px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            font-size: 26px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px 0;
+            font-size: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .imgtable {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .imgtable img {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        .imgtable td {
+            vertical-align: top;
+            padding: 10px;
+        }
+        
+        .imgtable td:first-child {
+            width: 150px;
+        }
+        
+        @media (max-width: 768px) {
+            #container {
+                flex-direction: column;
+            }
+            
+            #layout-menu, #layout-content {
+                width: 100%;
+                position: static;
+                height: auto;
+            }
+            
+            #layout-menu {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="layout-menu">
+            <div class="menu-category">Menu</div>
+            <div class="menu-item"><a href="index.html" class="current">Home</a></div>
+            <div class="menu-item"><a href="https://github.com/KueeChen">GitHub</a></div>
+            <div class="menu-item"><a href="#">Personal Blog</a></div>
+            
+            <div class="menu-category">Categories</div>
+            <div class="menu-item"><a href="#about">About Me</a></div>
+            <div class="menu-item"><a href="#projects">Projects</a></div>
+            <div class="menu-item"><a href="#education">Education</a></div>
+            <div class="menu-item"><a href="#experience">Experience</a></div>
+        </div>
+        
+        <div id="layout-content">
+            <h1>Kuee Chen</h1>
+            
+            <table class="imgtable">
+                <tr>
+                    <td>
+                        <img src="photos/bio.jpg" alt="Profile Photo" width="150px" />
+                    </td>
+                    <td>
+                        <p><b>Graduate Student, </b><br />
+                        School of Public administration, <b>Southwestern University of Finance and Economics</b><br />
+                        Chengdu, China<br />
+                        E-mail: <a href="kuee519@gmail.com">kuee519@gmail.com</a></p>
+                    </td>
+                </tr>
+            </table>
+            
+            <h2 id="about">About Me</h2>
+            <ul>
+                <li><b>Major: </b>Public Economics</li>
+                <li><b>Interests: </b>Securities Analysis, Data Analysis, Economic History</li>
+            </ul>
+            
+            <h2 id="projects">Projects</h2>
+            <ol>
+                <li>
+                    <p>...</p>
+                    <ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>...</p>
+                    <ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <h2 id="education">Education</h2>
+            <p>M.S., Public Economics, <a href="#">Southwestern University of Finance and Economics</a>, 06.2026</p>
+            <ul>
+                <li>Main Courses: Microeconomics, Macroeconomics, Public Economics, Institutional Economics, Game Theory and Information Economics, Social Security and Social Welfare</li>
+            </ul>
+            
+            <p>B.S., Economics, <a href="#">Southwestern University of Finance and Economics</a>, 06.2023</p>
+            
+            <h2 id="experience">Work Experience</h2>
+            <ol>
+                <li>
+                    <p>Telemarketing Operation Assistant, xftech, 03.2025-Present</p>
+                    <ul>
+                        <li>Oversaw daily telemarketing system operations. </li>
+                        <li>Optimize performance based on data analysis. </li>
+                    </ul>
+                </li>
+
+            </ol>
+            
+        </div>
+    </div>
+</body>
+</html>
